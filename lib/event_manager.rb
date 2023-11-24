@@ -1,9 +1,6 @@
 require 'csv'
 require 'google/apis/civicinfo_v2'
 
-civic_info = Google::Apis::CivicinfoV2::CivicInfoService.new
-civic_info.key = 'AIzaSyClRzDqDh5MsXwnCWi0kOiiBivP6JsSyBw'
-
 template_letter = File.read('form_letter.html')
 
 def clean_zipcode(zipcode)
